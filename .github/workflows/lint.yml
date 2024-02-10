@@ -1,0 +1,20 @@
+name: bash scripts linting
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step -- 1.
+        uses: actions/checkout@v4
+
+      - name: Step -- 2.
+        run: sudo apt-get update && sudo apt-get install --yes shellcheck
+
+      - name: Step -- 3.
+        run: shellcheck gitmirror.sh install.sh
