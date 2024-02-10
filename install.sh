@@ -26,4 +26,4 @@ git clone --depth=1 --branch=master -- https://github.com/vladpunko/gitmirror.gi
 }
 
 # Step -- 2.
-install -m 755 "${workdir}/gitmirror" /usr/local/bin/gitmirror
+install -m 755 "${workdir}/gitmirror.sh" /usr/local/bin/gitmirror
